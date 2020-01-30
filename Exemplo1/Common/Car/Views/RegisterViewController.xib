@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Exemplo1" customModuleProvider="target">
+            <connections>
+                <outlet property="brandTextField" destination="52U-gy-sfy" id="STh-Mo-Dfw"/>
+                <outlet property="modelTextField" destination="EvS-jx-3gS" id="jtG-Vy-3oC"/>
+                <outlet property="view" destination="Cos-5v-2NG" id="EEp-iv-837"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cos-5v-2NG">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Modelo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EvS-jx-3gS">
+                    <rect key="frame" x="16" y="74" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marca" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52U-gy-sfy">
+                    <rect key="frame" x="16" y="138" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daU-Xu-AIL">
+                    <rect key="frame" x="32" y="202" width="350" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1bb-p8-s5g"/>
+                    </constraints>
+                    <state key="normal" title="Salvar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSave:" destination="-1" eventType="touchUpInside" id="uUk-R3-KrK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="daU-Xu-AIL" firstAttribute="top" secondItem="52U-gy-sfy" secondAttribute="bottom" constant="30" id="A9E-FB-sYB"/>
+                <constraint firstItem="daU-Xu-AIL" firstAttribute="leading" secondItem="8rq-Tj-lN3" secondAttribute="leading" constant="32" id="HNO-46-8Xb"/>
+                <constraint firstItem="EvS-jx-3gS" firstAttribute="top" secondItem="8rq-Tj-lN3" secondAttribute="top" constant="30" id="TuM-gD-T0I"/>
+                <constraint firstItem="52U-gy-sfy" firstAttribute="leading" secondItem="8rq-Tj-lN3" secondAttribute="leading" constant="16" id="YAc-Fd-Z7a"/>
+                <constraint firstItem="8rq-Tj-lN3" firstAttribute="trailing" secondItem="daU-Xu-AIL" secondAttribute="trailing" constant="32" id="aMw-US-t4K"/>
+                <constraint firstItem="8rq-Tj-lN3" firstAttribute="trailing" secondItem="EvS-jx-3gS" secondAttribute="trailing" constant="16" id="eKx-0b-Z0g"/>
+                <constraint firstItem="EvS-jx-3gS" firstAttribute="leading" secondItem="8rq-Tj-lN3" secondAttribute="leading" constant="16" id="gRR-V6-aTX"/>
+                <constraint firstItem="52U-gy-sfy" firstAttribute="top" secondItem="EvS-jx-3gS" secondAttribute="bottom" constant="30" id="qdV-0c-UkQ"/>
+                <constraint firstItem="8rq-Tj-lN3" firstAttribute="trailing" secondItem="52U-gy-sfy" secondAttribute="trailing" constant="16" id="s7D-Mm-v7k"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8rq-Tj-lN3"/>
+            <point key="canvasLocation" x="136" y="123"/>
+        </view>
+    </objects>
+</document>
